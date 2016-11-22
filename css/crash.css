@@ -1,0 +1,96 @@
+body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,fieldset,legend,input,select,textarea,button,th,td{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+ul,dl,ol{list-style:none;}
+img,fieldset,input[type="submit"]{border:0 none;}
+img{display:inline-block;overflow:hidden;vertical-align:top;}
+em{font-style:normal;}
+strong{font-weight:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+button,input[type="button"]{cursor:pointer;border:0 none;}
+textarea{word-wrap:break-word;resize:none;}  /* word-wrap for opera, resize for webkit */
+menu{margin:0;padding:0;}
+body{-webkit-user-select:none;-webkit-text-size-adjust:none;font-family:Helvetica;}
+input[type="number"]{-webkit-user-select:text;}
+a,button,input,img{-webkit-touch-callout:none;}/* 1.ios 长按时不触发系统的菜单 2.禁止长按时下载图片 */
+input,select,textarea{outline:none;}
+a,button,input{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+@media all and (-webkit-transform-3d){
+/* android4.0+ ios4+ 恢复按钮被点击时产生的效果 */
+a,button,input{-webkit-tap-highlight-color:rgba(130,130,130,.52)};
+} 
+a{text-decoration:none;}
+/* ==================共用============================================================ */
+body{ background: #04162c ;}
+#wap{max-width:10rem;margin: 0 auto;width: 100%;height: 100%;
+    background: #04162c url(../img/body_bg.png) top left no-repeat;background-size:100% auto; }
+.fl {float: left; }
+.fr {float: right; }
+.clearfix {content: "";clear: both;overflow: hidden; }
+.head_img{ width: 100%; height: auto; position: relative; z-index: 0;}
+/* 首页 */
+section.section_pay{width: 80%; margin-left: 10%; color: white; margin-top: -2.8rem; margin-bottom: 2.8rem;}
+h3.h3_t{font-size: 0.4rem; line-height: 1rem; position: relative; font-weight: normal; text-align: center; }
+h3:before{content: '';display: inline-block; width: 36%; height: 1px; background: #7b827b; position: absolute; left: 0; top: 0.48rem; }
+h3:after{content: '';display: inline-block; width: 36%; height: 1px; background: #7b827b; position: absolute; right: 0; top: 0.48rem; }
+dl.pay_rule{ line-height: 0.8rem;font-size: 0.4rem; margin-top: 0.2rem; }
+dl.pay_rule dt{ float: left; font-size: 0.56rem;font-weight: bold; width: 6%;}
+dl.pay_rule dd{ float: left; width: 94%;}
+
+footer{ width: 100%;height: 2rem; background: #1d2d41; position: fixed; bottom: 0; left: 0;z-index: 1; }
+.footer_l{background: url(../img/logo1.png) top left no-repeat;background-size:100% auto; width: 32%; height: 2.5rem; 
+    position: absolute; top:-0.5rem; left: 5%; overflow: hidden;}
+.footer_r{ width:50%;right: 8%; position: absolute; height: 1.2rem; top:0.4rem; border-radius: 6px; 
+    background: #f89301; color: white; font-size: 0.5rem; text-align: center; line-height: 1.2rem; } 
+
+/* 现金券 */
+#wap_crash{
+  max-width:10rem;
+  margin: 0 auto;width: 100%;height: 100%;padding-top: 5.8rem;  
+    background: #04162c url(../img/crash_bg1.png) top left no-repeat;background-size:100% auto; position: relative;}
+section.section_crash{width: 90%; margin-left: 5%;   margin-bottom: 0rem; }
+.crash_gua{width:100%;background:url(../img/crash_guabg.png) top left no-repeat;background-size:100% auto; height: 7rem;
+  position: relative; z-index: 1;
+}
+p.gua_p{ font-size: 0.5rem;line-height: 1rem;position: relative;left: 2.3rem;top: 0.8rem;}
+//.guaguaka{position: absolute;left: 0.8rem;top: 2.58rem;width: 7.3rem;height: 3rem;background: red;}
+.guaguaka{position: absolute;left: 1.3rem;top: 8.38rem;width: 7.3rem;height: 3rem;background: red;}
+#myCanvas{position:relative; z-index: 2;width: 7.3rem;height: 3rem;}
+.quan{background:url(../img/crash_gua1.png) top left no-repeat;background-size:100% 100%;width: 7.3rem;height: 3rem;
+position: absolute; top: 0; left: 0; z-index: 1;}
+.quan span.price{ position: absolute; top: 0.35rem;left: 3.3rem;font-size: 1.3rem; color: #2f323a;} 
+
+p.crash_p{ font-size: 0.4rem; line-height: 0.5rem; width: 80%; margin: 0.2rem auto; text-align: center; color: #dddfe2;}
+ul.gua_button{width: 100%; margin-top: 0.5rem;display: none;}
+ul.gua_button li{ width: 48%; float: left; height: 1.2rem; text-align: center; line-height: 1.2rem; border-radius: 5px;
+color: white; font-size: 0.5rem; }
+ul.gua_button li:nth-child(1){background: #58B43E;}
+ul.gua_button li:nth-child(2){background: #F39801; float: right;}
+
+/*警告弹框-----------------------------------------------*/
+.alert_con{position:fixed; top:15%; left:5%; z-index: 5; padding:2% 0; width:90%; height:auto;  background:white; 
+    display:none; border-radius: 5px;}
+.alert_con_t{ width:90%; padding:0 5%; height:35px; line-height: 35px; border-bottom: 1px solid #e5e5e5; font-size: 26px; text-align: center;}
+.alert_con_b{ width:90%; padding:10% 5%;  line-height: 20px; font-size: 14px;}
+.alert_con_bl{ width:25px; height:25px; float:left; }
+.alert_con_br{ float:left;}
+.alert_con_close{ text-align: center; width:100px; height:35px; line-height: 35px; cursor:pointer; font-weight: normal;
+    background:#f89301; border-radius: 5px; transtion:all 1s; color:white; margin:0 auto; font-size: 0.46rem;}
+.alert_con_close:hover{background:orange;}
+.zheceng{ width:100%; height:100%; background:black; opacity:0.6; position:fixed; z-index: 1; top:0px; left:0px;display:none;}
+/*loading---------*/
+#loading {width: 1rem;height: 1rem;position: absolute;left: 50%;top: 50%;margin-left: -0.5rem;margin-top: -0.5rem;z-index: 10; 
+  -webkit-transform-origin: 50%;-moz-transform-origin: 50%;transform-origin: 50%;
+  -webkit-animation: swiper-preloader-spin 1s steps(12, end) infinite;
+  -moz-animation: swiper-preloader-spin 1s steps(12, end) infinite;
+  animation: swiper-preloader-spin 1s steps(12, end) infinite;
+  display: none; }
+#loading:after {display: block;content: "";width: 100%;height: 100%;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsKQGZvbnQtZmFjZSB7IGZvbnQtZmFtaWx5OiBpZm9udDsgc3JjOiB1cmwoaHR0cDovL2F0LmFsaWNkbi5jb20vdC9mb250XzE0NDIzNzM4OTZfNDc1NDQ1NS5lb3Q/I2llZml4KSBmb3JtYXQoZW1iZWRkZWQtb3BlbnR5cGUpLCB1cmwoaHR0cDovL2F0LmFsaWNkbi5jb20vdC9mb250XzE0NDIzNzM4OTZfNDc1NDQ1NS53b2ZmKSBmb3JtYXQod29mZiksIHVybChodHRwOi8vYXQuYWxpY2RuLmNvbS90L2ZvbnRfMTQ0MjM3Mzg5Nl80NzU0NDU1LnR0ZikgZm9ybWF0KHRydWV0eXBlKSwgdXJsKGh0dHA6Ly9hdC5hbGljZG4uY29tL3QvZm9udF8xNDQyMzczODk2XzQ3NTQ0NTUuc3ZnI2lmb250KSBmb3JtYXQoc3ZnKTsgfQoKXV0+PC9zdHlsZT48L2RlZnM+PGcgY2xhc3M9InRyYW5zZm9ybS1ncm91cCI+PGcgdHJhbnNmb3JtPSJzY2FsZSgwLjE5NTMxMjUsIDAuMTk1MzEyNSkiPjxwYXRoIGQ9Ik0zOTcuMTUyIDE1OC4yNzJtLTE1Ni45OTIgMGE0LjkwNiA0LjkwNiAwIDEgMCAzMTMuOTg0IDAgNC45MDYgNC45MDYgMCAxIDAtMzEzLjk4NCAwWk0xNTEuMTM2IDQ2MS4yOG0tMTMyIDBhNC4xMjUgNC4xMjUgMCAxIDAgMjY0IDAgNC4xMjUgNC4xMjUgMCAxIDAtMjY0IDBaTTI1Ny45ODQgODAwLjI4OG0tMTE5LjAwOCAwYTMuNzE5IDMuNzE5IDAgMSAwIDIzOC4wMTYgMCAzLjcxOSAzLjcxOSAwIDEgMC0yMzguMDE2IDBaTTU2MS40NCA5MjAuMjg4bS0xMDIuNDMyIDBhMy4yMDEgMy4yMDEgMCAxIDAgMjA0Ljg2NCAwIDMuMjAxIDMuMjAxIDAgMSAwLTIwNC44NjQgMFpNODE2LjI1NiA3OTkuNTJtLTg4LjUxMiAwYTIuNzY2IDIuNzY2IDAgMSAwIDE3Ny4wMjQgMCAyLjc2NiAyLjc2NiAwIDEgMC0xNzcuMDI0IDBaTTkyOC45MjggNTc1LjIzMm0tNzUuOTM2IDBhMi4zNzMgMi4zNzMgMCAxIDAgMTUxLjg3MiAwIDIuMzczIDIuMzczIDAgMSAwLTE1MS44NzIgMFpNOTAwLjQ4IDM2NC4xOTJtLTU2LjkyOCAwYTEuNzc5IDEuNzc5IDAgMSAwIDExMy44NTYgMCAxLjc3OSAxLjc3OSAwIDEgMC0xMTMuODU2IDBaTTc3My43NiAyMTIuNzY4bS00Mi40OTYgMGExLjMyOCAxLjMyOCAwIDEgMCA4NC45OTIgMCAxLjMyOCAxLjMyOCAwIDEgMC04NC45OTIgMFoiIGZpbGw9IiNmZmZmZmYiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==");
+  background-position: 50%;-webkit-background-size: 100%;background-size: 100%;background-repeat: no-repeat; }
+@-webkit-keyframes swiper-preloader-spin {
+  100% {-webkit-transform: rotate(360deg); } 
+}
+@keyframes swiper-preloader-spin {
+  100% {transform: rotate(360deg); } 
+}
+

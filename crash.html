@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/flexible.debug.js"></script>
+<link rel="stylesheet" href="css/crash.css">
+<body class="">
+<div id="wap_crash">
+<header>
+	<!-- <img src="img/body_t1.png" title="微信抽奖" class="head_img" /> -->
+</header>
+<section class="section_crash">
+    <div class="crash_gua">
+        <p class="gua_p">刮一刮，查看你的餐饮券～</p>  
+       <!--  <div class="guaguaka" id="guaguaka">
+          <div class="quan"><span class="price">3.8</span></div>
+          <canvas id="myCanvas"></canvas>
+        </div>  -->
+    </div>   
+        <div class="guaguaka" id="guaguaka">
+          <canvas id="myCanvas"></canvas>
+          <div class="quan"><span class="price">3.8</span></div>
+        </div>   
+    <p class="crash_p">本餐饮券仅限 8 月 8 日当天<br/>使用好近微信支付直接抵扣现金</p>
+    <ul class="gua_button js_gua_button">
+    	<li class="sure_b">就要这张</li>
+    	<li class="more_b">再抽一次</li>
+    	<div class="clearfix"></div>
+    </ul>
+    <input type="hidden" id="openid" value="${openid}" />
+    <input type="hidden" id="syssn" value="${syssn}" />
+</section>
+</div>
+
+<!-- </*弹框*/>  -->   
+<div class="alert_con">
+  <div class="alert_con_t">警告</div>
+  <div class="alert_con_b">
+   <div class="alert_con_bl"><span class="icon-warning-sign"></span></div>
+   <div class="alert_con_br"></div>
+   <div class="cear"></div>
+  </div>
+  <div class="alert_con_close js_alert_con_close"><span>确定</span></div>
+</div>
+<div class="zheceng"></div>
+
+<script type="text/javascript" src="js/crash_crash.js"></script>
+</body>
+
+</html>

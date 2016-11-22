@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/flexible.debug.js"></script>
+<link rel="stylesheet" href="css/crash.css">
+<body class="">
+<div id="wap">
+<header>
+	<img src="img/body_t.png" title="微信抽奖" class="head_img" />
+</header>
+<section class="section_pay">
+    <h3 class="h3_t">活动规则</h3>
+	<dl class="pay_rule">
+		<dt><span class="dot">·</span></dt>
+		<dd>2016.08.08 当天支付完成后，可参与支付1分钱抽餐饮券活动，餐饮券价值 1-5 元不等，所得餐饮券仅限 8.8 当天，使用好近微信支付直接抵扣现金。</dd>
+		<div class="clearfix"></div>
+		<dt><span class="dot">·</span></dt>
+		<dd>每个用户最多可以领取 1 张礼券，同一微信号视为同一个用户。</dd>
+		<div class="clearfix"></div>
+		<dt><span class="dot">·</span></dt>
+		<dd>享受优惠的订单若发生退货，相应的优惠根据退货总额同比例扣除。</dd>
+		<div class="clearfix"></div>
+		<dt><span class="dot">·</span></dt>
+		<dd>本活动最终解释权归微信支付所有</dd>
+		<div class="clearfix"></div>
+	</dl>
+	<input type="hidden" id="openid" value="${openid}" />
+    <input type="hidden" id="syssn" value="${syssn}" />
+    <input type="hidden" id="userid" value="${userid}" />
+</section>
+<footer>
+	<div class="footer_l"></div>
+	<div class="footer_r js_pay_crash">1分钱抽券</div>
+</footer>
+</div>
+
+<div id="loading"></div>
+<!-- </*弹框*/>  -->   
+<div class="alert_con">
+  <div class="alert_con_t">提示</div>
+  <div class="alert_con_b">
+   <div class="alert_con_bl"><span class="icon-warning-sign"></span></div>
+   <div class="alert_con_br"></div>
+   <div class="cear"></div>
+  </div>
+  <div class="alert_con_close js_alert_con_close"><span>确定</span></div>
+</div>
+<div class="zheceng"></div>
+
+<script type="text/javascript" src="js/crash_pay.js"></script>
+</body>
+
+</html>
